@@ -634,6 +634,14 @@ end-of-c-declare
 (define glViewport (c-lambda (GLint GLint GLsizei GLsizei) void "glViewport"))
 
 ;;------------------------------------------------------------------------------
+;;!! Extensions
+
+(define glBindVertexArrayOES (c-lambda (GLuint) void "glBindVertexArrayOES"));
+(define glDeleteVertexArraysOES (c-lambda (GLsizei GLuint*) void "glDeleteVertexArraysOES"));
+(define glGenVertexArraysOES (c-lambda (GLsizei GLuint*) void "glGenVertexArraysOES"));
+
+
+;;------------------------------------------------------------------------------
 ;;!! Extra procedures
 
 ;; Defined in terms of vector-based matrices. No checks are performed

@@ -525,7 +525,11 @@
    glVertexAttrib4f
    glVertexAttrib4fv
    glVertexAttribPointer
-   glViewport)
+   glViewport
+
+   glBindVertexArrayOES
+   glDeleteVertexArraysOES
+   glGenVertexArraysOES)
 
   (include "gles2.scm"))
 
